@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Greatest Boxers</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <script> 
+
+        let i = 0; 
+
+        const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; 
+
+ 
+
+        function swapImage() { 
+
+            document.getElementById('slide').src = images[i]; 
+
+            i = (i + 1) % images.length; 
+
+            setTimeout(swapImage, 3000); 
+
+        } 
+
+ 
+
+        window.onload = swapImage; 
+
+    </script> 
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Greatest Boxers of All Time</h1> 
+
+    </header> 
+
+    <main> 
+
+        <section> 
+
+            <h2>Introduction</h2> 
+
+            <p>This website lists the greatest boxers to ever live. Explore their achievements and contributions to the sport of boxing.</p> 
+
+            <img id="gb.jpg" src="gb.jpg" alt="Boxing Image"> 
+
+        </section> 
+
+        <section> 
+
+            <h2>Biographies</h2> 
+
+            <div class="boxer"> 
+
+                <h3>Muhammad Ali</h3> 
+
+                <ma.jpg> 
+
+                <img src="ma.jpg" alt="Muhammad Ali"> 
+
+                <p>Muhammad Ali was an American professional boxer and activist. He is widely regarded as one of the most significant and celebrated sports figures of the 20th century and as one of the greatest boxers of all time.</p> 
+
+            </div> 
+
+            <div class="boxer"> 
+
+                <h3>Mike Tyson</h3> 
+
+                <mt.jpg> 
+
+                <img src="mt.jpg" alt="Mike Tyson"> 
+
+                <p>Michael Gerard Tyson is an American former professional boxer who competed from 1985 to 2005. He reigned as the undisputed world heavyweight champion and holds the record as the youngest boxer to win a heavyweight title at 20 years, four months, and 22 days old.</p> 
+
+            </div> 
+
+            <div class="boxer"> 
+
+                <h3>Sugar Ray Leonard</h3> 
+
+                <srl.jpg> 
+
+                <img src="srl.jpg" alt="Sugar Ray Leonard"> 
+
+                <p>Sugar Ray Leonard is an American former professional boxer, motivational speaker, and occasional actor. He competed from 1977 to 1997, winning world titles in five weight classes, the lineal championship in three weight classes, and the undisputed welterweight title.</p> 
+
+            </div> 
+
+            <!-- Add more boxers as needed --> 
+
+        </section> 
+
+    </main> 
+
+    <footer> 
+
+        <nav> 
+
+            <a href="index.html">Home</a> |  
+
+            <a href="about.html">About</a> 
+
+        </nav> 
+
+    </footer> 
+
+</body> 
+
+</html> 
